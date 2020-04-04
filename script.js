@@ -25,5 +25,24 @@ $(document).ready(function() {
     $('html, body').stop().animate({
         scrollTop:$(target).offset().top
     }, 3000);
-   })
+   });
+
+    //owl team
+  $('.team-center').owlCarousel({
+    loop: true,
+    margin: 10,
+    smartSpeed: 4000,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
 })

@@ -201,7 +201,7 @@ nav {
   transition: background 2s ease;
 }
 .navBackground {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /***********skills***********************/
@@ -351,3 +351,127 @@ nav {
         background: #03243e;
     }
 }
+
+/*********projects**************************/
+.projects {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "item1 item1 item2 item3 item3"
+  "item1 item1 item4 item5 item5"
+  "item6 item7 item7 item5 item5"
+  "item6 item8 item9 item9 item10";
+}
+
+.project-1 {
+  grid-area: item1;
+  background: url("./img/projects-1.jpeg")center/cover fixed no-repeat;
+}
+.project-2 {
+  grid-area: item2;
+  background: url("./img/projects-2.jpeg")center/cover no-repeat;
+}
+.project-3 {
+  grid-area: item3;
+  background: url("./img/projects-3.jpeg")center/cover no-repeat;
+}
+
+.project-4 {
+  grid-area: item4;
+  background: url("./img/projects-4.jpeg")center/cover no-repeat;
+}
+
+.project-5 {
+  grid-area: item5;
+  background: url("./img/projects-5.jpeg")center/cover fixed no-repeat;
+}
+
+.project-6 {
+  grid-area: item6;
+  background: url("./img/projects-6.jpeg")center/cover  no-repeat;
+}
+.project-7 {
+  grid-area: item7;
+  background: url("./img/projects-7.jpeg")center/cover  no-repeat;
+}
+.project-8 {
+  grid-area: item8;
+  background: url("./img/projects-8.jpeg")center/cover fixed no-repeat;
+}
+.project-9 {
+  grid-area: item9;
+  background: url("./img/projects-9.jpeg")center/cover no-repeat;
+}
+.project-10 {
+  grid-area: item10;
+  background: url("./img/projects-10.jpeg")center/cover no-repeat;
+}
+
+.project {
+  transition: opacity 2s ease;
+}
+
+.project:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/************team section*********************/
+.team-members {
+  padding: 10px 20px;
+  background: #f5f3f5;
+  color: #191919;
+}
+
+.member {
+  text-align: center;
+  margin: 40px 0;
+}
+.member img {
+  border-radius: 30px;
+}
+.member h3 {
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+.member h6 {
+  margin: 0 0 7px 0;
+  text-transform: capitalize;
+  color: #a72121;
+}
+
+.member p {
+  margin: 0 0 10px 0;
+  line-height: 2;
+  color: #9f9a9a;
+}
+
+.member-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+.member-icons a {
+  font-size: 30px;
+}
+
+.member-icons .fa-facebook {
+  color: #3b5998;
+}
+
+.member-icons .fa-twitter {
+  color: #00aced;
+}
+
+.member-icons .fa-google {
+  color: #f4c20d;
+}
+
+.member-icons .fa-instagram {
+  color: #fb3958;
+}
+
